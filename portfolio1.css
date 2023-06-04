@@ -1,0 +1,120 @@
+.y1{
+    background-color: black;
+    width: 721px;
+    height: 800px;
+    margin-top: 0px;
+    margin-left: -8px;
+}
+.y2{
+    background-color: gold;
+    width:100vw;
+    height:60px;
+    z-index:1;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+body{
+    overflow: hidden;
+    background-color: black;
+}
+ul{
+    list-style-type:none;
+}
+.y{
+    display: block;
+    width: 35vw;
+    height: 5vh;
+    position: absolute;
+    top: 2px;
+    left: 113px;
+}
+.links:hover{
+    color:black;
+    background-color:blue;
+}
+.y5{
+   display: block;
+   width: 3vw;
+   height: 3vh;
+   position:absolute;
+   top: 2px;
+}
+a{
+    text-decoration: none;
+    color:Green;
+    margin: 2px;
+}
+.y6{
+    position: absolute;
+    top:124px;
+    left:550px;
+    width: 400px;
+}
+p{
+ text-align: center;
+ color:silver;
+}
+.y8{
+    color:silver;
+    position: relative;
+    z-index:2;
+    animation: yash94 7s ease-in 0s 1,yash3 0.9s steps(2) 7s 1,yash6 10s linear 8s 1;
+}
+@keyframes yash94{
+    0%{
+        opacity: 0;
+    }
+    99%{
+        opacity: 0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+@keyframes yash3{
+    0%{
+        opacity:0;
+    }
+    100%{
+       opacity: 11;
+    }  
+}
+@keyframes yash6 {
+    100%{
+        transform: translateX(25rem);
+    }
+}
+.y10{
+    position:relative;
+    opacity:0;
+    color:white;
+    top:26px;
+    left:72px;
+    display: inline-block;
+    margin:2px;
+    animation: yash9 14s linear 10s 1,yash15 5s linear 14s 1 forwards;
+}
+@keyframes yash9{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes yash15 {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+.y10{
+    opacity:0;
+}
