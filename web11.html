@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .y1{
+            margin: auto;
+            background-color: black;
+            color:rgb(50, 206, 50);
+            width:400px;
+            height:300px;
+            text-align: center;
+            word-wrap: break-word;
+        }
+        body{
+            background-image: url('h66.webp');
+            background-size:50vw 100vh;
+        }
+        .hello{
+            border: none;
+            background-color: black;
+            color:rgb(50, 206, 50);
+            display:block;
+            width: 350px;
+            margin: auto;
+            text-align: center;
+        }
+        ::placeholder{
+            color:rgb(50, 206, 50);
+        }
+    </style>
+</head>
+<body>
+    <div class="y1">Hey Boy</div>
+    <div class="y1">
+        <input type="text" name="Enter" id="hello1" class="hello" placeholder="Enter no of special characters"><br>
+        <input type="text" name="Enter" id="hello2" class="hello" placeholder="Enter no of upper case characters"><br>
+        <input type="text" name="Enter" id="hello3" class="hello" placeholder="Enter no of lower case characters">
+        </div>
+        <button type="submit" onclick="delet()">Ok</button>
+</body>
+<script>
+    var s1="abcdefghijklmnopqrstuvwxyz";
+    var s2="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var s3="!@#$%^&*_-?/|";
+    var s7=s1+s2+s3;
+    function delet(){
+     class Password{
+     paas(){
+     var a1=document.getElementById('hello1');
+    console.log(a1);
+    var b1=a1.value;
+    var a2=document.getElementById('hello2');
+    var a3=document.getElementById('hello3');
+    var b2=a2.value;
+    var b3=a3.value;
+    var a4=[];
+    var a5=[];
+    var a6=[];
+    var i;
+        for(i=0;i<b1;i++)
+    {
+        var a=parseInt((Math.random()*25+1));  
+        a4[i]=s1[a];
+    }
+    for(i=0;i<b2;i++)
+    {
+        var a=parseInt((Math.random()*25+1));  
+        a5[i]=s2[a];
+    }
+    for(i=0;i<b3;i++)
+    {
+        let b=parseInt((Math.random()*12+1));  
+        a6[i]=s3[b];
+    }
+    console.log(a4,a5,a6,b1,b2,b3);
+    Password.createStrongPassword(a4,a5,a6,b1,b2,b3,(Number(b1)+Number(b2)+Number(b3)))
+}
+         static yash(s11) {
+            let g=document.getElementsByClassName('y1')[0];
+            g.innerHTML=g.innerHTML+'<br>'+'Your Password'+'<br>'+s11;
+        }
+        static createStrongPassword(a4,a5,a6,b1,b2,b3,b7)
+        { 
+            console.log(b7);
+           var s11="";
+           var l,i1;
+           for(i1=1;i1<=parseInt(b7/4);i1++)
+           {
+           var g1=parseInt(Math.random()*b1);
+           var g2=parseInt(Math.random()*b2);
+           var g3=parseInt(Math.random()*b3);
+            s11=s11+a4[g1].toString()+" "+a5[g2].toString()+a6[g3].toString();
+           }
+           l=b7+1-i1;
+           for(i1=1;i1<=l;i1++)
+           {
+            var g10=parseInt(Math.random()*62);
+            s11=s11+s7[g10];
+           }
+            Password.yash(s11);
+        }
+    }
+        y1=new Password();
+        y1.paas();
+}
+</script>
+</html>
