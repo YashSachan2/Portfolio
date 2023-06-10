@@ -47,8 +47,8 @@ a{
 }
 .y6{
     position: absolute;
-    top:124px;
-    left:550px;
+    top:24vh;
+    left:30vw;
     width: 400px;
 }
 p{
@@ -59,7 +59,7 @@ p{
     color:silver;
     position: relative;
     z-index:2;
-    animation: yash94 7s ease-in 0s 1,yash3 0.9s steps(2) 7s 1,yash6 10s linear 8s 1;
+    /*animation: yash94 5s ease-in 0s infinite,yash3 0.9s steps(2) 7s 1,yash6 8s linear 6s 1;*/
 }
 @keyframes yash94{
     0%{
@@ -89,11 +89,11 @@ p{
     position:relative;
     opacity:0;
     color:white;
-    top:26px;
-    left:72px;
+    top:1vh;
+    left:7vw;
     display: inline-block;
     margin:2px;
-    animation: yash9 14s linear 10s 1,yash15 5s linear 14s 1 forwards;
+    animation: yash9 14s linear 2s 1,yash15 5s linear 14s 1 forwards;
 }
 @keyframes yash9{
     0%{
