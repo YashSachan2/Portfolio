@@ -90,10 +90,10 @@ p{
     opacity:0;
     color:white;
     top:1vh;
-    left:7vw;
+    left:4vw;
     display: inline-block;
     margin:2px;
-    animation: yash9 14s linear 2s 1,yash15 5s linear 14s 1 forwards;
+    animation: yash9 5s linear 0s 1,yash9 5s linear 5s 1,yash9 5s linear 10s 1,yash9 5s linear 15s 1,yash9 5s linear 20s 1,yash15 5s linear 25s 1 forwards;
 }
 @keyframes yash9{
     0%{
